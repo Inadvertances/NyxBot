@@ -1,0 +1,19 @@
+{
+    "color": "0xFFC0CB",
+	"title": "Hello {{name}} !",
+	"author": {
+		"name": "NyxBot",
+		"icon_url": "https://cdn.discordapp.com/attachments/964395262221111317/964920021727969340/Logo_Ina_test_1.png"
+	},
+	"description": "Bip boop bip! I'm a Ro.Bot! I can't understand what you say, but i'm grateful that you are talking to me",
+	"fields": [
+		{
+			"name": "Your message was",
+			"value": "",
+			"inline": false
+		}
+	],
+	"footer": {
+		"text": "Powered by NyxBot"
+	}
+}
