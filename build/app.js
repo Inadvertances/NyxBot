@@ -24,8 +24,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv = __importStar(require("dotenv"));
+const http_1 = require("http");
 const DiscordBot_1 = require("./DiscordBot/DiscordBot");
 dotenv.config();
 if (process.env.CLIENT_TOKEN) {
     DiscordBot_1.DiscordBot.setupBot(process.env.CLIENT_TOKEN);
 }
+let server = new http_1.Server();
+server.listen({ port: process.env.PORT || 5000 });

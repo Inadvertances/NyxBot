@@ -38,7 +38,7 @@ class MessageCreateEvent {
                     .setFooter(BotIdentificationEmbed_json_1.default.footer)
                     .setTimestamp(new Date());
                 message.react("❤️");
-                author.send({ embeds: [response] });
+                (yield message.awaitMessageComponent()).reply({ embeds: [response], ephemeral: true });
             }
         }));
     }
