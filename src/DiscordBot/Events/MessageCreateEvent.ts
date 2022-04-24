@@ -1,4 +1,4 @@
-import { Client, ColorResolvable, MessageEmbed } from 'discord.js';
+import { ColorResolvable, MessageEmbed } from 'discord.js';
 import { discordClient } from '../DiscordBot';
 import template from '../Embeds/BotIdentificationEmbed.json'
 
