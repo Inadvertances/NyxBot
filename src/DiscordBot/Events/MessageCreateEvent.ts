@@ -28,7 +28,7 @@ export default class MessageCreateEvent {
                     .setTimestamp(new Date());
 
                 message.react("❤️");
-                (await message.awaitMessageComponent()).reply({embeds: [response], ephemeral: true});
+                message.reply({ embeds: [response] })
             }
         });
     }
